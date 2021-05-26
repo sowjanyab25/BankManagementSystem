@@ -8,9 +8,9 @@ class bank
     char name[100],add[100],y;
     int balance, amount;
 public:
-    void open_account ();
+    void open_account();
     void deposit_money();
-    void withdraw_money ();
+    void withdraw_money();
     void display_account();
 };
 void bank::open_account()
