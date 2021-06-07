@@ -16,6 +16,9 @@ public:
     void withdraw_money();
     void display_account();
 };
+/*
+     OPENING ACCOUNT
+*/
 void bank::open_account()
 {
     cout<<"Enter your full name : ";
@@ -31,6 +34,9 @@ void bank::open_account()
     cout<<"Your account is created ";
 
 }
+/*
+     MONEY DEPOSIT IN ACCOUNT
+*/
 void bank::deposit_money()
 {
     int a ;
@@ -39,6 +45,9 @@ void bank::deposit_money()
     balance+=a;
     cout<<"Your total deposit amount\n";
 }
+/*
+     DISPLAY ACCOUNT STATUS
+*/
 void bank::display_account()
 {
     cout<<"Enter the name : "<<name<<endl;
@@ -47,6 +56,9 @@ void bank::display_account()
     cout<<"Amount you deposit : "<<balance<<endl;
 
 }
+/*
+     CASH WITHDRAWL
+*/
 void bank::withdraw_money()
 {
     cout<<"withdraw ::";
@@ -55,7 +67,9 @@ void bank::withdraw_money()
     balance=balance-amount;
     cout<<"Balance after withdrawl : "<<balance;
 }
-
+/*
+     MAIN FUNCTION TO CALL ALL METHODS
+*/
 int main()
 {
     int ch,x,n;
